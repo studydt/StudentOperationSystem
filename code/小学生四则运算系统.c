@@ -1,7 +1,9 @@
+//少用goto , 回去都给改了, 换成其他的
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-
+#include <time.h> //line103  time' was not declared in this scope
+//将每个功能用函数分别写, 在main函数里分别调用, 这样好管理
 int main()
 {
 	char c, yonghuming[20], mima1[20], d, e, mima2[20], ch;
@@ -113,7 +115,7 @@ nihao:
 				l = rand() % 100;
 				switch (a)
 				{
-				case'0': 
+				case'0':
 				{
 					/*加法*/
 					cuowucishu = 0;
