@@ -31,7 +31,7 @@ nihao:
 			getchar();
 			if ((fp1 = fopen(yonghuming, "r")) == NULL)
 			{
-				if ((fp1 = fopen(yonghuming, "w")) == NULL) 
+				if ((fp1 = fopen(yonghuming, "w")) == NULL)
 				{
 					printf("文件打开错误。\n");
 					exit(0);
@@ -52,7 +52,7 @@ nihao:
 					printf("是否返回菜单？（Y/N）\n");
 					printf("请输入：");
 					scanf("%c", &e);
-					d = getchar();
+					while(getchar()!='\n');  //把缓冲区多余的字符串读取掉
 					if (e == 'Y' || e == 'y')
 					{
 						printf("已返回菜单。\n");
@@ -183,7 +183,7 @@ nihao:
 				l = rand() % 100;
 				switch (a)
 				{
-				case'0': 
+				case'0':
 				{
 					/*加法*/
 					cuowucishu = 0;
